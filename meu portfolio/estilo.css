@@ -1,0 +1,217 @@
+:root {
+  --cor-principal: #FFD700; /* Amarelo */
+  --cor-secundaria: #000000; /* Preto */
+  --cor-apoio: #1C1C1C; /* Cinza escuro */
+  --cor-fundo: #111111; /* Fundo geral */
+  --cor-texto: #f5f5f5; /* Texto claro */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+header {
+  background: var(--cor-secundaria);
+  color: var(--cor-principal);
+  padding: 40px 0;
+  text-align: center;
+}
+
+nav {
+  background: var(--cor-apoio);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--cor-principal);
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* Seção Sobre centralizada */
+#sobre {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: var(--cor-apoio);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+#sobre h2 {
+  color: var(--cor-principal);
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Habilidades */
+.skills {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2em;
+}
+
+.skills div {
+  background: var(--cor-apoio);
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skills div:hover {
+  transform: scale(1.05);
+}
+
+.skills i {
+  color: var(--cor-principal);
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+/* Projetos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--cor-apoio);
+  color: var(--cor-texto);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  color: var(--cor-principal);
+}
+
+.card a {
+  display: inline-block;
+  padding: 10px;
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card a:hover {
+  background: white;
+  color: var(--cor-secundaria);
+}
+
+/* Formulário */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: var(--cor-principal);
+  color: var(--cor-secundaria);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: white;
+  color: var(--cor-secundaria);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--cor-apoio);
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+
+
+#formacao {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  color: #fff;
+}
+
+#formacao h2 {
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 30px;
+}
+
+.formacao-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formacao-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.formacao-item i {
+  font-size: 24px;
+  color: #ffd700;
+  margin-right: 10px;
+}
+
+.formacao-item h3 {
+  margin-top: 10px;
+  color: #ffd700;
+}
+
+.formacao-item ul {
+  list-style: disc;
+  padding-left: 20px;
+}
